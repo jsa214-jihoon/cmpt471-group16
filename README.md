@@ -49,6 +49,8 @@ iperf h5 h3
 
 
 #### Router with Bloom Counter
+This p4app is the exact same as *myrouter.p4app* but it has implemented the bloom filter as a counter rather then as a bit array. Aside from this it has the same functionality.
+
 Launch Docker.
 On the Docker Terminal, *cd* to the repository folder containing the *myrouterbloomcounter.p4app* folder and run the following command.
 ```
