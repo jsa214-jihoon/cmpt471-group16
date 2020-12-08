@@ -9,12 +9,12 @@ Topology Diagram:
 ## Steps:
 
 #### Installing Requirements
-Clone the *p4app* that is used for the Project. This allows building, running, debugging, and testing P4 programs.
+Install *p4app* with the following commands. *p4app* allows building, running, debugging, and testing P4 programs.
 ```
 cd ~/
 git clone --branch rc-2.0.0 https://github.com/p4lang/p4app.git
 ```
-Clone this project repository into desired location.
+Clone this project's repository into desired location.
 ```
 git clone https://github.com/jsa214-jihoon/cmpt471-group16.git
 ```
