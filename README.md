@@ -1,7 +1,9 @@
 # CMPT 471 Group 16 - Router
+
 <kbd>
 <img src="Diagram.png" alt="Network Topology" width="400" style="border-radius:50%" />
 </kbd>
+
 ## Steps:
 ```
 cd ~/
