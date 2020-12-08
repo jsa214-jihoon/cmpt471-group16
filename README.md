@@ -24,7 +24,27 @@ On Docker Terminal, cd to the repository folder containing *myrouter.p4app* fold
 ```
 ~/p4app/p4app run myrouter.p4app
 ```
+Possible commands include pinging one host from another,
+```
+h1 ping h2
+```
+.
 
+According to the topology, there is a firewall at S2 where h2/h3 can reach h1/h4/h5, but not the other way around. Exception is given for h5, so that h5 can still reach h2 and h3.
+
+For example:
+```
+iperf h2 h1
+```
+-> works.
+```
+iperf h1 h2
+```
+-> does not work.
+```
+iperf h5 h3
+```
+-> works.
 #### Router with Bloom Counter
 
 Launch Docker.
