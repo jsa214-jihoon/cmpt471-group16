@@ -8,29 +8,30 @@ Topology Diagram:
 
 ## Steps:
 
-#### Installing Requirements
+#### Install Requirements
 Install *p4app* with the following commands. *p4app* allows building, running, debugging, and testing P4 programs.
 ```
 cd ~/
 git clone --branch rc-2.0.0 https://github.com/p4lang/p4app.git
 ```
-Clone this project's repository into desired location.
+Clone this project's repository into a desired location.
 ```
 git clone https://github.com/jsa214-jihoon/cmpt471-group16.git
 ```
 #### Main Router
 Launch Docker.
-On Docker Terminal, cd to the repository folder containing *myrouter.p4app* folder and run the following command.
+On the Docker Terminal, *cd* to the repository folder containing the *myrouter.p4app* folder and run the following command.
 ```
 ~/p4app/p4app run myrouter.p4app
 ```
-Possible commands include pinging one host from another,
+To test the program, different commands are available including pinging one host from another.
 ```
-h1 ping h2
+<src hostname> ping <dst hostname>
+iperf <src hostname> <dst hostname>
 ```
-.
 
-According to the topology, there is a firewall at S2 where h2/h3 can reach h1/h4/h5, but not the other way around. Exception is given for h5, so that h5 can still reach h2 and h3.
+
+According to the topology, there is a firewall at s2 where h2/h3 can reach h1/h4/h5, but not the other way around. Exception is given for h5, where h5 can still reach h2 and h3.
 
 For example:
 ```
@@ -45,10 +46,11 @@ iperf h1 h2
 iperf h5 h3
 ```
 -> works.
-#### Router with Bloom Counter
 
+
+#### Router with Bloom Counter
 Launch Docker.
-On Docker Terminal, cd to the repository folder containing *myrouterbloomcounter.p4app* folder and run the following command.
+On the Docker Terminal, *cd* to the repository folder containing the *myrouterbloomcounter.p4app* folder and run the following command.
 ```
 ~/p4app/p4app run myrouterbloomcounter.p4app
 ```
