@@ -144,22 +144,22 @@ control MyIngress(inout headers hdr,
        hash(pos1, HashAlgorithm.crc16, (bit<32>)0, {ipAddr1,
                                                     ipAddr2,
                                                     port1,
-                                                    port2/*,
-                                                    hdr.ipv4.protocol*/},
+                                                    port2,
+                                                    hdr.ipv4.protocol},
                                                     (bit<32>)8192);
 
        hash(pos2, HashAlgorithm.crc32, (bit<32>)0, {ipAddr1,
                                                     ipAddr2,
                                                     port1,
-                                                    port2/*,
-                                                    hdr.ipv4.protocol*/},
+                                                    port2,
+                                                    hdr.ipv4.protocol},
                                                     (bit<32>)8192);
 
         hash(pos3, HashAlgorithm.csum16, (bit<32>)0, {ipAddr1,
                                                     ipAddr2,
                                                     port1,
-                                                    port2/*,
-                                                    hdr.ipv4.protocol*/},
+                                                    port2,
+                                                    hdr.ipv4.protocol},
                                                     (bit<32>)8192);
     }
 
