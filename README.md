@@ -1,3 +1,7 @@
+# CMPT 471 Group 16 - Router
+
+![Alt text](/Diagram.png?raw=true "Network Topology")
+
 ## Steps:
 ```
 cd ~/
