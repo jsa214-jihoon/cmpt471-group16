@@ -24,7 +24,7 @@ On the Docker Terminal, *cd* to the repository folder containing the *myrouter.p
 ```
 ~/p4app/p4app run myrouter.p4app
 ```
-To test the program, different commands are available including pinging one host from another.
+To test the program, different commands are available such as:
 ```
 <src hostname> ping <dst hostname>
 iperf <src hostname> <dst hostname>
