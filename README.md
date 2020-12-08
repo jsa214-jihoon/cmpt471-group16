@@ -1,5 +1,5 @@
 # CMPT 471 Group 16 - Router
-<img src="Diagram.png" alt="Network Topology" width="400" style="border: 1px black" />
+<img src="Diagram.png" alt="Network Topology" width="400" style="border-radius:50%" />
 
 ## Steps:
 ```
