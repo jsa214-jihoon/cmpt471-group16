@@ -25,21 +25,6 @@ def addFirewallRule(sw, inPort, outPort, direction):
                         action_params = {"dir": direction}
                         )
 
-#current topology
-#               (h1)
-#                 |
-#                 |
-#                 1
-#               (s1)
-#              2    3
-#             /      \  
-#            /        \
-#           2          2 
-#         (s2) 3 --- 3 (s3)
-#        1    4            1
-#       /      \            \
-#      /        \            \
-#    (h2)      (h3)         (h4)
 
 # Set Forwarding for S1
 for host, port in [(1,1), (2,2), (3,2), (4,3), (5, 3)]:
@@ -80,13 +65,9 @@ assert loss == 0
 from mininet.cli import CLI
 CLI(net)
 
-# JIHOON #
 print('\n')
 print('Traffic Stats: \n')
 print('s1 IP packet counter: ' + str(s1.readCounter('ip_packets', 1)[0]))
-# print('S1 ARP packets: ' + str(s1.readCounter('switch_arp_packets', 1)[0]))
 print('s2 IP packet counter: ' + str(s2.readCounter('ip_packets', 1)[0]))
-# print('S2 ARP packets: ' + str(s2.readCounter('switch_arp_packets', 1)[0]))
 print('s3 IP packet counter: ' + str(s3.readCounter('ip_packets', 1)[0]))
-# print('S3 ARP packets: ' + str(s3.readCounter('switch_arp_packets', 1)[0]))
 print('s4 IP packet counter: ' + str(s4.readCounter('ip_packets', 1)[0]))
