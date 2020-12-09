@@ -29,7 +29,7 @@ To test the program, different commands are available such as:
 <src hostname> ping <dst hostname>
 iperf <src hostname> <dst hostname>
 ```
-Exit the mininet to see the 'Traffic stats' showing the number of packets passed through each switch using counter.
+Exit (*Ctrl+C*) the mininet to see the 'Traffic stats' showing the number of packets passed through each switch using counter.
 
 According to the topology, there is a firewall at s2 where h2/h3 can reach h1/h4/h5, but not the other way around. Exception is given for h5, where h5 can still reach h2 and h3.
 
