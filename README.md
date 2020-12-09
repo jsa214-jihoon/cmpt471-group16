@@ -1,6 +1,6 @@
 # CMPT 471 Group 16 - Router
 
-Topology Diagram:
+#### Topology Diagram:
 
 <kbd>
 <img src="Diagram.png" alt="Network Topology" width="400" style="border-radius:50%" />
