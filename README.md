@@ -37,15 +37,15 @@ For example:
 ```
 iperf h2 h1
 ```
--> works.
+-> **Can** see the TCP Bandwidth, which signifies that it works.
 ```
 iperf h1 h2
 ```
--> does not work.
+-> **Cannot** see the TCP Bandwidth, which signifies that it does not work.
 ```
 iperf h5 h3
 ```
--> works.
+-> **Can** see the TCP Bandwidth, which signifies that it works.
 
 
 #### Router with Bloom Counter
